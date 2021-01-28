@@ -9,7 +9,7 @@ function getCach() {
   return JSON.parse(fs.readFileSync(cmdPath, "utf8"));
 }
 function setCach(data) {
-  fs.writeFileSync(cmdPath, JSON.stringify(data));
+  fs.writeFileSync(cmdPath, JSON.stringify(data, "", 2));
 }
 
 function getCmdParams() {

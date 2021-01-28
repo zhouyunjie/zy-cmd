@@ -26,6 +26,9 @@ if (JSON.stringify(options) == "{}") {
   }
   // 查看所有已注册指令
   if (options.list) {
-    console.log(allCmds);
+    let arr = Object.keys(allCmds).map((key) => {
+      return { cmd: key, script: allCmds[key] };
+    });
+    console.table(arr);
   }
 }
