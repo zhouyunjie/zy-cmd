@@ -1,6 +1,6 @@
 {
   "name": "zy-cmd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "自定义整合执行脚本",
   "main": "mc.js",
   "bin": {

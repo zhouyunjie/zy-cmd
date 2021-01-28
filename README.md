@@ -13,6 +13,7 @@
   mc -a  cmdName cmdScript  注册命令 cmdName 命令简称 cmdScript 命令语句 语句中有空格或者其他参数请输入字符串
   mc -d  cmdName            删除命令 cmdName 命令简称
   mc cmdName                执行命令 cmdName 命令简称
+
 ```
 
 ### example：
@@ -30,3 +31,10 @@
   <!-- 删除 -->
   mc -d lv
 ```
+
+## 注意
+
+因为缓存文件存储在 npm 包中  
+所以每次更新包时会清空以前保存的命令  
+更新前请备份好 my-cmd.json 文件  
+更新好直接覆盖此文件即可
